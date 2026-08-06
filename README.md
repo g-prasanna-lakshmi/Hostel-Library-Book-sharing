@@ -1,4 +1,4 @@
-This is an excellent project because it is **more realistic than a Student Management System**. It introduces concepts like inventory management, borrowing rules, waiting queues, due dates, reporting, and object-oriented design—all while remaining manageable for a beginner.
+Hostel Library book sharing system introduces concepts like inventory management, borrowing rules, waiting queues, due dates, reporting, and object-oriented design—all while remaining manageable for a beginner.
 
 # Project Title
 
