@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-# Program Name: Hostel Library Book Sharing
+# Program Name: main.py
 # Purpose: displays the menu and captures book/owner details.
 # Author: prasanna
-# Document: main.py
+# Document:
 # Logs:
 # 08-Aug-2026 - prasanna - Creation date.
 # 10-Aug-2026 - prasanna - Captured owner and book information.
@@ -31,15 +31,15 @@ print()
 owner_name = input("Owner Name: ").strip()
 room_number = input("Hostel Room Number: ").strip()
 title = input("Book Title: ").strip()
-author =input("Author: ").strip()
+author = input("Author: ").strip()
 category = input("Category: ").strip()
 edition = input("Edition: ").strip()
-year = input("Publication Year: ").strip()
+year = input (int("Publication Year: ").strip())
 
 print()
 print("Book Added")
 print(f"Owner       : {owner_name}")
-print(f"Roon Number : {room_number}")
+print(f"Room Number : {room_number}")
 print(f"Title       : {title}")
 print(f"Author      : {author}")
 print(f"Category    : {category}")
