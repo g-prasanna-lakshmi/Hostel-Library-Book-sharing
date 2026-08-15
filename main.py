@@ -9,8 +9,10 @@
 # 10-Aug-2026 - prasanna - Captured owner and book information.
 # 11-Aug-2026 - prasanna - Added validation for year, title, room number, and edition;
 # program exits with a message on invalid input.
-
+# 12-Aug-2026 - prasanna - created a book list, added multiple entries one at a time, 
+#                          displayed the total number of books by numbering.  
 from datetime import date
+books = []          # books list
 
 print("-" * 30)
 print("HOSTEL LIBRARY BOOK SHARING")
@@ -73,6 +75,7 @@ else:
 
 print()
 print("Book Added")
+books.append(title)   # To add books
 print(f"Owner       : {owner_name}")
 print(f"Room Number : {room_number}")
 print(f"Title       : {title}")
@@ -81,3 +84,8 @@ print(f"Category    : {category}")
 print(f"Edition     : {edition}")
 print(f"Year        : {year}")
 print("-" * 20)
+
+for i, book in enumerate(books, start = 1):
+   print(f"{i}.{book}")      # printing books added by numbering
+
+print(f"Total Books: {len(books)}")  # To display total numbers books added
