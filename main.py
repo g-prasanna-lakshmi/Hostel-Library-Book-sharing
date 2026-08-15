@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 # Program Name: main.py
 # Purpose: displays the menu and captures book/owner details.
 # Author: prasanna
@@ -21,8 +20,8 @@ print("HOSTEL LIBRARY BOOK SHARING")
 print("-" * 30)
 print("Welcome to the Hostel Library")
 #while loop to choose actions repeatedly 
-running = True
-while running:       
+while True:
+   print()     
    print("1. Add Book")
    print("2. View Books")
    print("3. Search Books")
@@ -35,6 +34,7 @@ while running:
    if choice == "1":
       print ("1. Add Book")
       print("Add a New Book")
+      print()
 #user inputs
       owner_name = input("Owner Name: ").strip()
       room_number = int(input("Hostel Room Number: ").strip())
@@ -76,10 +76,11 @@ while running:
          continue
       else:
          pass
-
+      print()
       print("Book Added")   # Displays book added
       print()
       books.append(title)   # To add more books
+      print()
       print(f"Owner       : {owner_name}")     # To display what users had entered
       print(f"Room Number : {room_number}")
       print(f"Title       : {title}")
@@ -94,6 +95,7 @@ while running:
       print("2. View Books")
       for i, book in enumerate(books, start = 1):   # for loop
          print(f"{i}.{book}")                       # printing books added by numbering
+         print()
       print(f"Total Books: {len(books)}")           # To display total numbers books added
 
    elif choice == "3":
@@ -103,7 +105,7 @@ while running:
    elif choice == "5":
       print("5. Return Book")
    elif choice == "6":
-      running = False
+      False
       print("Exiting... Good bye!")
    else:
       print("Invalid choice! Please try again!")
